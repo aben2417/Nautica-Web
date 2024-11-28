@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Nautica Benítez</title>
+</head>
+<body>
+    <header>
+        <img src="/Nautica-Web/img/nauticaLogo.png" alt="logoNautica" height="150px" width="135px">
+        <h1>Nautica Benítez S.L</h1>
+    </header>
+    <nav>
+        <a href="/Nautica-Web/index.html" >
+            <input type="button" value="Inicio">
+        </a>
+        <a href="/Nautica-Web/html/productos.html">
+            <input type="button" value="Productos">
+        </a>
+        <a href="/Nautica-Web/html/servicios.html">
+            <input type="button" value="Servicios">
+        </a>
+        <a href="/Nautica-Web/html/contactanos.html">
+            <input type="button" value="Contactanos">
+        </a>
+        <a href="/Nautica-Web/html/sobreNosotros.html">
+            <input type="button" value="Sobre Nosotros">
+        </a>
+        <a href="/Nautica-Web/html/areaPersonal.html">
+            <input type="button" value="Area Personal">
+        </a>
+    </nav><hr><br><br>
+    <section>
+        <h3>Ticket soporte</h3>
+        <form action="paginaDestino.php" method="POST">
+            <label for="ftype">Recibir soporte: </label><br>
+            <input type="radio" value="errUsuario" id="ftype" name="ftipo" required><label>Cuenta</label>
+            <input type="radio" value="errPago" id="ftype" name="ftipo" required><label>Pagos</label>
+            <input type="radio" value="errPedido" id="ftype" name="ftipo" required><label>Pedido</label><br><br>
+            <label>Email:</label>
+            <input type="email" id="femail" name="fcorreo" placeholder="Correo Electronico" required><br><br>
+            <label for="comentarios"><b>Cuentanos tu problema:</b></label><br>
+            <textarea id="comentarios" name="comentarios" rows="15" cols="30" placeholder="Detalla tu problema aquí..." required></textarea><br><br>
+            <label for="privacidad">
+                <input type="checkbox" id="privacidad" name="privacidad" required>
+                He leído y acepto la política de privacidad
+            </label><br><br>
+            <input type="submit">
+        </form>
+    </section><br><br>
+    <footer><hr>
+        <label><b>Encuentranos en:</b></label><br><br>
+        <div>
+            <img src="/Nautica-Web/img/Iconos/instagram.png" height="25" width="25">
+            <label>@nautica_benitez_sl</label><br>
+            <img src="/Nautica-Web/img/Iconos/whatsapp.png" height="25" width="25">
+            <label>+34 111000111</label><br>
+            <img src="/Nautica-Web/img/Iconos/facebook.png" height="25" width="25">
+            <label>Nautica Benítez S.L.</label><br>
+            <img src="/Nautica-Web/img/Iconos/telefono.png" height="25" width="25">
+            <label>+34 956220244</label><br>
+            <img src="/Nautica-Web/img/Iconos/correo.png" height="25" width="25">
+            <label>nautica@nauticabenitez.com</label><br><br>
+            <label><b>Dirección:</b></label>
+            <p>Punta de San Felipe, s/n<br>
+                Cádiz<br>
+                Codigo postal: 11004<br>
+                España
+            </p>
+        </div>
+    </footer>
+</body>
+</html>
