@@ -4,70 +4,257 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Nautica Benítez</title>
-    <link rel="shortcut icon" href="/Nautica-Web/img/Iconos/shortcut.png">
+    <link rel="stylesheet" href="../css/estilos.css">
+    <link rel="shortcut icon" href="../img/Iconos/shortcut.png">
 </head>
 <body>
     <header>
-        <img src="/Nautica-Web/img/nauticaLogo.png" alt="logoNautica" height="150px" width="135px">
-        <h1>Nautica Benítez S.L</h1>
+        <div class="row bGrisClaro">
+            <div class="col-1"></div>
+            <div class="col-5">
+                <img src="../img/Iconos/correo.png" height="15" width="15">
+                <label class="bold azul">Correo:</label>
+                <label class="marginRgt5 bold">nautica@nauticabenitez.com</label>
+                <img src="../img/Iconos/whatsapp.png" height="15" width="15">
+                <label class="bold azul">Whatsapp:</label>
+                <label class="marginRgt5 bold">+34 676407803</label>
+                <img src="../img/Iconos/telefono.png" height="15" width="15">
+                <label class="bold azul">Teléfono:</label>
+                <label class="marginRgt5 bold">+34 956220244</label>
+            </div>
+            <div class="col-1"></div>
+            <div class="col-3">
+                <label class="rojo bold">GASTOS DE ENVIO GRATIS DESDE 50€</label>
+            </div>
+            <div class="col-2"></div>
+        </div>
+        <div class="row">
+            <div class="col-1">
+                <img src="../img/nauticaLogo.webp" alt="logoNautica" height="150px" width="135px" class="marginLft20 marginTop10 marginBottom10">
+            </div>
+            <div class="col-5 marginTop52">
+                <nav>
+                    <a href="../index.html" >
+                        <input type="button" value="Inicio">
+                    </a>
+                    <a href="servicios.html">
+                        <input type="button" value="Servicios">
+                    </a>
+                    <a href="contactanos.html">
+                        <input type="button" value="Contactanos" class="pressed">
+                    </a>
+                    <a href="sobreNosotros.html">
+                        <input type="button" value="Sobre Nosotros" class="azulClaro">
+                    </a>
+                </nav>
+            </div>
+            <div class="col-4 marginTop130">
+                <div style="position: relative; display: inline-block;">
+                    <input type="text" placeholder="¿Buscas algo?" class="textBoxNav">
+                    <img src="../img/Iconos/lupa.png" height="20" width="20" class="lupaNav">
+                </div>
+            </div>
+            <div class="col-1">
+                <div class="row">
+                    <div class="col-12 marginTop51">
+                        <nav>
+                            <a href="areaPersonal.html">
+                                <button class="botonAp">
+                                    <img src="../img/Iconos/usuarioN.png" alt="icono">
+                                    Area Personal
+                                </button>
+                                <!--<input type="button" value="Area Personal">-->
+                            </a>
+                        </nav>
+                    </div>
+                </div>
+            </div>
+            <div class="col-1"></div>
+        </div>
+        <div class="row bAzul padding10 sombra">
+            <div class="col-12"></div>
+        </div>
     </header>
-    <nav>
-        <a href="/Nautica-Web/index.html" >
-            <input type="button" value="Inicio">
-        </a>
-        <a href="/Nautica-Web/html/productos.html">
-            <input type="button" value="Productos">
-        </a>
-        <a href="/Nautica-Web/html/servicios.html">
-            <input type="button" value="Servicios">
-        </a>
-        <a href="/Nautica-Web/html/contactanos.html">
-            <input type="button" value="Contactanos">
-        </a>
-        <a href="/Nautica-Web/html/sobreNosotros.html">
-            <input type="button" value="Sobre Nosotros">
-        </a>
-        <a href="/Nautica-Web/html/areaPersonal.html">
-            <input type="button" value="Area Personal">
-        </a>
-    </nav><hr><br><br>
+    <div>
+        <div class="row marginTop60">
+            <div class="col-4">
+                <a href="contactanos.html">
+                    <img src="../img/Iconos/flecha.png" height="30px" width="30px">
+                    <label class="bold">Volver</label>
+                </a>
+            </div>
+            <div class="col-4">
+                <label class="titulo">Ticket soporte</label>
+            </div>
+            <div class="col-4"></div>
+        </div>
+        <div class="row">
+            <div class="col-4"></div>
+            <div class="col-4">
+                <form action="#" method="POST" class="marginTop30 bLogin padding10">
+                    <div class="row marginTop10">
+                        <div class="col-12">
+                            <div class="row">
+                                <div class="col-12">
+                                    <label class="bold">Recibir Soporte:</label>
+                                </div>
+                            </div>
+                            <div class="row">
+                                <div class="col-12">
+                                    <input type="radio" value="errUsuario" id="ftype" name="ftipo" required><label class="sinBold">Cuenta</label>
+                                    <input type="radio" value="errPago" id="ftype" name="ftipo" required><label class="sinBold">Pagos</label>
+                                    <input type="radio" value="errPedido" id="ftype" name="ftipo" required><label class="sinBold">Pedido</label>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="row marginTop10">
+                        <div class="col-12">
+                            <div class="row">
+                                <div class="col-12">
+                                    <label class="bold">Email:</label>
+                                </div>
+                            </div>
+                            <div class="row marginTop10">
+                                <div class="col-12">
+                                    <input type="email" id="femail" name="fcorreo" placeholder="Correo Electronico" required>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="row marginTop10">
+                        <div class="col-12">
+                            <div class="row">
+                                <div class="col-12">
+                                    <label class="bold">Cuentanos tu problema:</label>
+                                </div>
+                            </div>
+                            <div class="row marginTop10">
+                                <div class="col-12">
+                                    <textarea id="comentarios" name="comentarios" rows="15" cols="30" placeholder="Detalla tu problema aquí..." required></textarea>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="row marginTop10">
+                        <div class="col-12">
+                            <div class="row">
+                                <div class="col-12">
+                                    <label for="privacidad">
+                                        <input type="checkbox" id="privacidad" name="privacidad" required>
+                                        He leído y acepto la política de privacidad
+                                    </label>
+                                </div>
+                            </div>
+                            <div class="row marginTop10">
+                                <div class="col-12">
+                                    <input type="submit">
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </form>
+            </div>
+            <div class="col-4"></div>
+        </div>
+    </div>
+
     <section>
-        <h3>Ticket soporte</h3>
         <form action="paginaDestino.php" method="POST">
-            <label for="ftype">Recibir soporte: </label><br>
-            <input type="radio" value="errUsuario" id="ftype" name="ftipo" required><label>Cuenta</label>
-            <input type="radio" value="errPago" id="ftype" name="ftipo" required><label>Pagos</label>
-            <input type="radio" value="errPedido" id="ftype" name="ftipo" required><label>Pedido</label><br><br>
-            <label>Email:</label>
-            <input type="email" id="femail" name="fcorreo" placeholder="Correo Electronico" required><br><br>
-            <label for="comentarios"><b>Cuentanos tu problema:</b></label><br>
-            <textarea id="comentarios" name="comentarios" rows="15" cols="30" placeholder="Detalla tu problema aquí..." required></textarea><br><br>
-            <label for="privacidad">
-                <input type="checkbox" id="privacidad" name="privacidad" required>
-                He leído y acepto la política de privacidad
-            </label><br><br>
-            <input type="submit">
+            <br><br><br><br>
+            
         </form>
     </section><br><br>
-    <footer><hr>
-        <label><b>Encuentranos en:</b></label><br><br>
-        <div>
-            <img src="/Nautica-Web/img/Iconos/instagram.png" height="25" width="25">
-            <label>@nautica_benitez_sl</label><br>
-            <img src="/Nautica-Web/img/Iconos/whatsapp.png" height="25" width="25">
-            <label>+34 111000111</label><br>
-            <img src="/Nautica-Web/img/Iconos/facebook.png" height="25" width="25">
-            <label>Nautica Benítez S.L.</label><br>
-            <img src="/Nautica-Web/img/Iconos/telefono.png" height="25" width="25">
-            <label>+34 956220244</label><br>
-            <img src="/Nautica-Web/img/Iconos/correo.png" height="25" width="25">
-            <label>nautica@nauticabenitez.com</label><br><br>
-            <label><b>Dirección:</b></label>
-            <p>Punta de San Felipe, s/n<br>
-                Cádiz<br>
-                Codigo postal: 11004<br>
-                España
-            </p>
+    <footer>
+        <!-- ROW DE ESPACIADO-->
+        <div class="row">
+            <div class="col-12 marginTop30"></div>
+        </div>
+        <div class="row">
+            <div class="col-3"></div>
+            <div class="col-2">
+                <div class="row">
+                    <div class="col-12">
+                        <label class="bold">Encuentranos en:</label>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-12">
+                        <div class="row marginBottom10 marginTop10">
+                            <img src="../img/Iconos/instagram.png" height="25" width="25" class="marginRgt5">
+                            <label>@nautica_benitez_sl</label>
+                        </div>
+                        <div class="row marginBottom10 marginTop10">
+                            <img src="../img/Iconos/whatsapp.png" height="25" width="25" class="marginRgt5">
+                            <label>+34 676407803</label>
+                        </div>                      
+                        <div class="row marginBottom10 marginTop10">
+                            <img src="../img/Iconos/facebook.png" height="25" width="25" class="marginRgt5">
+                            <label>Nautica Benítez S.L.</label>
+                        </div>
+                        <div class="row marginBottom10 marginTop10">
+                            <img src="../img/Iconos/telefono.png" height="25" width="25" class="marginRgt5">
+                            <label>+34 956220244</label>
+                        </div>
+                        <div class="row marginBottom10 marginTop10">
+                            <img src="../img/Iconos/correo.png" height="25" width="25" class="marginRgt5">
+                            <label>nautica@nauticabenitez.com</label>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-2"></div>
+            <div class="col-2">
+                <div class="row">
+                    <div class="col-12">
+                        <label class="bold"> Dirección</label>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-12">
+                        <div class="row">
+                            <div class="col-12 marginTop10">
+                                <label>Punta de San Felipe, s/n</label>
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="col-12 marginTop10">
+                                <label>Cádiz</label>
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="col-12 marginTop10">
+                                <label>Codigo postal: 11004</label>
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="col-12 marginTop10">
+                                <label>España</label>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-3"></div>
+        </div>
+        <!--ROW COPYRIGHT-->
+        <div class="row">
+            <div class="col-12 marginTop30">
+                <h3 class="bold">© Todos los derechos reservados.</h3>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-4"></div>
+            <div class="col-4">
+                <label>Política de privacidad</label>
+                <label> | </label>
+                <label>Aviso legal</label>
+            </div>
+            <div class="col-4"></div>
+        </div>
+        <!-- ROW FINAL-->
+        <div class="row">
+            <div class="col-12 padding10"></div>
         </div>
     </footer>
 </body>

@@ -1,69 +1,378 @@
 <!DOCTYPE html>
 <html lang="es">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Nautica Benítez</title>
-    <link type="steelsheet" href="css/estilos.css">
-    <link rel="shortcut icon" href="img/Iconos/shortcut.png">
-</head>
-<body>
+    <link rel="stylesheet" href="css/estilos.css" />
+    <link rel="shortcut icon" href="img/Iconos/shortcut.png" />
+  </head>
+  <body>
     <header>
-        <img src="img/nauticaLogo.png" alt="logoNautica" height="150px" width="135px">
-        <h1>Nautica Benítez S.L</h1>
+      <div class="row bGrisClaro marquesina-container">
+        <div class="marquesina-texto">
+          <div class="col-1"></div>
+          <div class="col-5">
+            <img src="img/Iconos/correo.png" height="15" width="15" />
+            <label class="bold azul">Correo:</label>
+            <label class="marginRgt5 bold">nautica@nauticabenitez.com</label>
+            <img src="img/Iconos/whatsapp.png" height="15" width="15" />
+            <label class="bold azul">Whatsapp:</label>
+            <label class="marginRgt5 bold">+34 676407803</label>
+            <img src="img/Iconos/telefono.png" height="15" width="15" />
+            <label class="bold azul">Teléfono:</label>
+            <label class="marginRgt5 bold">+34 956220244</label>
+            <label class="rojo bold">GASTOS DE ENVIO GRATIS DESDE 50€</label>
+          </div>
+          <div class="col-1"></div>
+          <div class="col-3">
+            <!--<label class="rojo bold">GASTOS DE ENVIO GRATIS DESDE 50€</label>-->
+          </div>
+          <div class="col-2"></div>
+        </div>
+      </div>
+      <div class="row">
+        <div class="col-1">
+          <img
+            src="img/nauticaLogo.webp"
+            alt="logoNautica"
+            height="150px"
+            width="135px"
+            class="marginLft20 marginTop10 marginBottom10"
+          />
+        </div>
+        <div class="col-5 marginTop52">
+          <nav>
+            <a href="index.html">
+              <input type="button" value="Inicio" class="pressed" />
+            </a>
+            <a href="html/servicios.html">
+              <input type="button" value="Servicios" />
+            </a>
+            <a href="html/contactanos.html">
+              <input type="button" value="Contactanos" />
+            </a>
+            <a href="html/sobreNosotros.html">
+              <input type="button" value="Sobre Nosotros" class="azulClaro" />
+            </a>
+          </nav>
+        </div>
+        <div class="col-4 marginTop130">
+          <div style="position: relative; display: inline-block">
+            <input type="text" placeholder="¿Buscas algo?" class="textBoxNav" />
+            <img
+              src="img/Iconos/lupa.png"
+              height="20"
+              width="20"
+              class="lupaNav"
+            />
+          </div>
+        </div>
+        <div class="col-1">
+          <div class="row">
+            <div class="col-12 marginTop51">
+              <nav>
+                <a href="html/areaPersonal.html">
+                  <button class="botonAp">
+                    <img src="img/Iconos/usuarioN.png" alt="icono" />
+                    Area Personal
+                  </button>
+                  <!--<input type="button" value="Area Personal">-->
+                </a>
+              </nav>
+            </div>
+          </div>
+        </div>
+        <div class="col-1"></div>
+      </div>
+      <div class="row bAzul padding10 sombra">
+        <div class="col-12"></div>
+      </div>
     </header>
-    <nav>
-        <a href="/Nautica-Web/index.html" >
-            <input type="button" value="Inicio">
-        </a>
-        <a href="/Nautica-Web/html/productos.html">
-            <input type="button" value="Productos">
-        </a>
-        <a href="/Nautica-Web/html/servicios.html">
-            <input type="button" value="Servicios">
-        </a>
-        <a href="/Nautica-Web/html/contactanos.html">
-            <input type="button" value="Contactanos">
-        </a>
-        <a href="/Nautica-Web/html/sobreNosotros.html">
-            <input type="button" value="Sobre Nosotros">
-        </a>
-        <a href="/Nautica-Web/html/areaPersonal.html">
-            <input type="button" value="Area Personal">
-        </a>
-    </nav><hr><br><br>
-    <section>
-        <div>
-            <br><br>
-            <img src="img/banner.jpeg" height="400" width="750">
-            <p>Con más de 30 años de experiencia, somos tu tienda de confianza para todo lo relacionado con el mundo náutico.
-                Ofrecemos una amplia selección de accesorios, equipos de navegación, ropa técnica y suministros para entusiastas del mar.<br> 
-                Nos especializamos en brindar calidad, asesoramiento experto y un servicio personalizado para que disfrutes cada aventura en el agua con seguridad y confort. 
-                ¡Más de tres décadas navegando contigo!
-            </p>
+    <!-- Resumen de la compra (inicialmente oculto) -->
+    <div id="resumen-compra" class="resumen-compra">
+      <div class="contenido-resumen">
+        <h2>Carrito</h2>
+        <ul>
+            <li><strong>Pintura:</strong> 1 x 20.00€</li>
+            <li><strong>Tornillo:</strong> 2 x 15.00€</li>
+            <li><strong>Rodamiento:</strong> 2 x 30.00€</li>
+            <li><strong>Retenes:</strong> 1 x 10.00€</li>
+            <li><strong>Alternador:</strong> 1 x 120.00€</li>
+            <li><strong>Filtro Aceite:</strong> 3 x 8.00€</li>
+            <li><strong>Bridas:</strong> 5 x 2.00€</li>
+            <li><strong>Tuercas:</strong> 10 x 1.50€</li>
+        </ul>
+        <hr />
+        <p><strong>Total:</strong> 246.50€</p>
+        <button id="cerrar-resumen">Cerrar</button>
+        <button id="comprar-resumen">Comprar</button>
+      </div>
+    </div>
+    <!-- INICIO CUERPO HTML-->
+    <div class="carrito">
+        <img src="img/Iconos/carrito.png" alt="Carrito" id="icono-carrito" />
+    </div>
+    <div>
+      <div class="marginTop30">
+        <div class="row">
+          <div class="col-4">
+            <div class="row">
+              <div class="col-12">
+                <a href="html/productos/rIntra.html">
+                  <img
+                    src="img/Secciones/intraBorda.jpeg"
+                    alt="Aceites"
+                    height="300px"
+                    width="300px"
+                    class="sombraProductos"
+                  />
+                </a>
+              </div>
+            </div>
+            <div class="row marginTop10">
+              <div class="col-12">
+                <a href="html/productos/rIntra.html">
+                  <label class="bold">Recambios Intraborda</label>
+                </a>
+              </div>
+            </div>
+          </div>
+          <div class="col-4">
+            <div class="row">
+              <div class="col-12">
+                <a href="html/productos/rFuera.html">
+                  <img
+                    src="img/Secciones/fueraBorda.jpeg"
+                    alt="Aceites"
+                    height="300px"
+                    width="300px"
+                    class="sombraProductos"
+                  />
+                </a>
+              </div>
+            </div>
+            <div class="row marginTop10">
+              <div class="col-12">
+                <a href="html/productos/rFuera.html">
+                  <label class="bold">Recambios Fueraborda</label>
+                </a>
+              </div>
+            </div>
+          </div>
+          <div class="col-4">
+            <div class="row">
+              <div class="col-12">
+                <a href="html/productos/lubricantes.html">
+                  <img
+                    src="img/Secciones/lubricantes.jpeg"
+                    alt="Aceites"
+                    height="300px"
+                    width="300px"
+                    class="sombraProductos"
+                  />
+                </a>
+              </div>
+            </div>
+            <div class="row marginTop10">
+              <div class="col-12">
+                <a href="html/productos/lubricantes.html">
+                  <label class="bold">Lubricantes motor</label>
+                </a>
+              </div>
+            </div>
+          </div>
         </div>
-    </section>
-    <br><br><br><br><br><br><br><br><br>
-    <footer><hr>
-        <label><b>Encuentranos en:</b></label><br><br>
-        <div>
-            <img src="/Nautica-Web/img/Iconos/instagram.png" height="25" width="25">
-            <label>@nautica_benitez_sl</label><br>
-            <img src="/Nautica-Web/img/Iconos/whatsapp.png" height="25" width="25">
-            <label>+34 111000111</label><br>
-            <img src="/Nautica-Web/img/Iconos/facebook.png" height="25" width="25">
-            <label>Nautica Benítez S.L.</label><br>
-            <img src="/Nautica-Web/img/Iconos/telefono.png" height="25" width="25">
-            <label>+34 956220244</label><br>
-            <img src="/Nautica-Web/img/Iconos/correo.png" height="25" width="25">
-            <label>nautica@nauticabenitez.com</label><br><br>
-            <label><b>Dirección:</b></label>
-            <p>Punta de San Felipe, s/n<br>
-                Cádiz<br>
-                Codigo postal: 11004<br>
-                España
-            </p>
+        <div class="row marginTop30 marginBottom60">
+          <div class="col-4">
+            <div class="row">
+              <div class="col-12">
+                <a href="html/productos/MyP.html">
+                  <img
+                    src="img/Secciones/pinturas.jpeg"
+                    alt="Aceites"
+                    height="300px"
+                    width="300px"
+                    class="sombraProductos"
+                  />
+                </a>
+              </div>
+            </div>
+            <div class="row marginTop10">
+              <div class="col-12">
+                <a href="html/productos/MyP.html">
+                  <label class="bold">Mantenimiento y Pinturas</label>
+                </a>
+              </div>
+            </div>
+          </div>
+          <div class="col-4">
+            <div class="row">
+              <div class="col-12">
+                <a href="html/productos/seguridad.html">
+                  <img
+                    src="img/Secciones/seguridad.jpeg"
+                    alt="Aceites"
+                    height="300px"
+                    width="300px"
+                    class="sombraProductos"
+                  />
+                </a>
+              </div>
+            </div>
+            <div class="row marginTop10">
+              <div class="col-12">
+                <a href="html/productos/seguridad.html">
+                  <label class="bold">Seguridad</label>
+                </a>
+              </div>
+            </div>
+          </div>
+          <div class="col-4">
+            <div class="row">
+              <div class="col-12">
+                <a href="html/productos/limpieza.html">
+                  <img
+                    src="img/Secciones/limpieza.jpeg"
+                    alt="Aceites"
+                    height="300px"
+                    width="300px"
+                    class="sombraProductos"
+                  />
+                </a>
+              </div>
+            </div>
+            <div class="row marginTop10">
+              <div class="col-12">
+                <a href="html/productos/limpieza.html">
+                  <label class="bold">Limpieza</label>
+                </a>
+              </div>
+            </div>
+          </div>
         </div>
+      </div>
+    </div>
+
+    <!-- FIN CUEPO HTML-->
+
+    <footer>
+      <!-- ROW DE ESPACIADO-->
+      <div class="row">
+        <div class="col-12 marginTop30"></div>
+      </div>
+      <div class="row">
+        <div class="col-3"></div>
+        <div class="col-2">
+          <div class="row">
+            <div class="col-12">
+              <label class="bold">Encuentranos en:</label>
+            </div>
+          </div>
+          <div class="row">
+            <div class="col-12">
+              <div class="row marginBottom10 marginTop10">
+                <img
+                  src="img/Iconos/instagram.png"
+                  height="25"
+                  width="25"
+                  class="marginRgt5"
+                />
+                <label>@nautica_benitez_sl</label>
+              </div>
+              <div class="row marginBottom10 marginTop10">
+                <img
+                  src="img/Iconos/whatsapp.png"
+                  height="25"
+                  width="25"
+                  class="marginRgt5"
+                />
+                <label>+34 676407803</label>
+              </div>
+              <div class="row marginBottom10 marginTop10">
+                <img
+                  src="img/Iconos/facebook.png"
+                  height="25"
+                  width="25"
+                  class="marginRgt5"
+                />
+                <label>Nautica Benítez S.L.</label>
+              </div>
+              <div class="row marginBottom10 marginTop10">
+                <img
+                  src="img/Iconos/telefono.png"
+                  height="25"
+                  width="25"
+                  class="marginRgt5"
+                />
+                <label>+34 956220244</label>
+              </div>
+              <div class="row marginBottom10 marginTop10">
+                <img
+                  src="img/Iconos/correo.png"
+                  height="25"
+                  width="25"
+                  class="marginRgt5"
+                />
+                <label>nautica@nauticabenitez.com</label>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="col-2"></div>
+        <div class="col-2">
+          <div class="row">
+            <div class="col-12">
+              <label class="bold"> Dirección</label>
+            </div>
+          </div>
+          <div class="row">
+            <div class="col-12">
+              <div class="row">
+                <div class="col-12 marginTop10">
+                  <label>Punta de San Felipe, s/n</label>
+                </div>
+              </div>
+              <div class="row">
+                <div class="col-12 marginTop10">
+                  <label>Cádiz</label>
+                </div>
+              </div>
+              <div class="row">
+                <div class="col-12 marginTop10">
+                  <label>Codigo postal: 11004</label>
+                </div>
+              </div>
+              <div class="row">
+                <div class="col-12 marginTop10">
+                  <label>España</label>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="col-3"></div>
+      </div>
+      <!--ROW COPYRIGHT-->
+      <div class="row">
+        <div class="col-12 marginTop30">
+          <h3 class="bold">© Todos los derechos reservados.</h3>
+        </div>
+      </div>
+      <div class="row">
+        <div class="col-4"></div>
+        <div class="col-4">
+          <label>Política de privacidad</label>
+          <label> | </label>
+          <label>Aviso legal</label>
+        </div>
+        <div class="col-4"></div>
+      </div>
+      <!-- ROW FINAL-->
+      <div class="row">
+        <div class="col-12 padding10"></div>
+      </div>
     </footer>
-</body>
+    <script src="js/animacion.js"></script>
+  </body>
 </html>

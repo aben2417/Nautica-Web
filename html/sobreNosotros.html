@@ -1,106 +1,361 @@
 <!DOCTYPE html>
 <html lang="es">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Nautica Benítez</title>
-    <link rel="shortcut icon" href="/Nautica-Web/img/Iconos/shortcut.png">
-</head>
-<body>
+    <link rel="stylesheet" href="../css/estilos.css" />
+    <link rel="shortcut icon" href="../img/Iconos/shortcut.png" />
+  </head>
+  <body>
     <header>
-        <img src="/Nautica-Web/img/nauticaLogo.png" alt="logoNautica" height="150px" width="135px">
-        <h1>Nautica Benítez S.L</h1>
-    </header>
-    <nav>
-        <a href="/Nautica-Web/index.html" >
-            <input type="button" value="Inicio">
-        </a>
-        <a href="/Nautica-Web/html/productos.html">
-            <input type="button" value="Productos">
-        </a>
-        <a href="/Nautica-Web/html/servicios.html">
-            <input type="button" value="Servicios">
-        </a>
-        <a href="/Nautica-Web/html/contactanos.html">
-            <input type="button" value="Contactanos">
-        </a>
-        <a href="/Nautica-Web/html/sobreNosotros.html">
-            <input type="button" value="Sobre Nosotros">
-        </a>
-        <a href="/Nautica-Web/html/areaPersonal.html">
-            <input type="button" value="Area Personal">
-        </a>
-    </nav><hr><br><br>
-    <section>
+      <div class="row bGrisClaro">
+          <div class="col-1"></div>
+          <div class="col-5">
+              <img src="../img/Iconos/correo.png" height="15" width="15">
+              <label class="bold azul">Correo:</label>
+              <label class="marginRgt5 bold">nautica@nauticabenitez.com</label>
+              <img src="../img/Iconos/whatsapp.png" height="15" width="15">
+              <label class="bold azul">Whatsapp:</label>
+              <label class="marginRgt5 bold">+34 676407803</label>
+              <img src="../img/Iconos/telefono.png" height="15" width="15">
+              <label class="bold azul">Teléfono:</label>
+              <label class="marginRgt5 bold">+34 956220244</label>
+          </div>
+          <div class="col-1"></div>
+          <div class="col-3">
+              <label class="rojo bold">GASTOS DE ENVIO GRATIS DESDE 50€</label>
+          </div>
+          <div class="col-2"></div>
+      </div>
+      <div class="row">
+          <div class="col-1">
+              <img src="../img/nauticaLogo.webp" alt="logoNautica" height="150px" width="135px" class="marginLft20 marginTop10 marginBottom10">
+          </div>
+          <div class="col-5 marginTop52">
+              <nav>
+                  <a href="../index.html" >
+                      <input type="button" value="Inicio">
+                  </a>
+                  <a href="servicios.html">
+                      <input type="button" value="Servicios">
+                  </a>
+                  <a href="contactanos.html">
+                      <input type="button" value="Contactanos">
+                  </a>
+                  <a href="sobreNosotros.html">
+                      <input type="button" value="Sobre Nosotros" class="pressed">
+                  </a>
+              </nav>
+          </div>
+          <div class="col-4 marginTop130">
+              <div style="position: relative; display: inline-block;">
+                  <input type="text" placeholder="¿Buscas algo?" class="textBoxNav">
+                  <img src="../img/Iconos/lupa.png" height="20" width="20" class="lupaNav">
+              </div>
+          </div>
+          <div class="col-1">
+              <div class="row">
+                  <div class="col-12 marginTop51">
+                      <nav>
+                          <a href="areaPersonal.html">
+                              <button class="botonAp">
+                                  <img src="../img/Iconos/usuarioN.png" alt="icono">
+                                  Area Personal
+                              </button>
+                              <!--<input type="button" value="Area Personal">-->
+                          </a>
+                      </nav>
+                  </div>
+              </div>
+          </div>
+          <div class="col-1"></div>
+      </div>
+      <div class="row bAzul padding10 sombra">
+          <div class="col-12"></div>
+      </div>
+  </header>
+    <!-- Comienzo del cuerpo de la web-->
+    <div class="row marginTop30">
+      <div class="col-1"></div>
+      <div class="col-4 marginTop50">
+        <iframe
+          src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3205.531471739748!2d-6.286000849398996!3d36.541296313266905!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0xd0dd170d8aa1fcd%3A0x78531918bb570c92!2sN%C3%A1utica%20Benitez%20S-Reparaci%C3%B3n%20Embarcaci%C3%B3n!5e0!3m2!1ses!2ses!4v1738584938046!5m2!1ses!2ses"
+          width="600"
+          height="450"
+          style="border: 0"
+          allowfullscreen=""
+          loading="lazy"
+          referrerpolicy="no-referrer-when-downgrade"
+        ></iframe>
+      </div>
+      <div class="col-1"></div>
+      <div class="col-5 borderNautica">
         <h2>MÁS DE 30 AÑOS DE EXPERIENCIA</h2>
-        <p>Náutica Benítez, S.L. es una empresa familiar que ha dejado una huella sólida y confiable en el sector naval durante más de tres décadas. Fundada en el año 1990 en el prestigioso Club Náutico de Cádiz, esta empresa ha recorrido un camino de éxito y crecimiento constante a lo largo de los años.</p>
         <p>
-            Comenzamos a forjar nuestra reputación con la reparación de motores marinos de embarcaciones de recreo, profesionales y pesqueras. La pasión por la navegación y el compromiso con la excelencia en el servicio al cliente pronto se convirtieron en los pilares fundamentales de esta empresa.
-            En el año 2000, Náutica Benítez dio un paso significativo al trasladarse a su domicilio actual, lo que les permitió ampliar sus operaciones y ofrecer un servicio aún más completo. Un año después, en 2001, la empresa dio un paso crucial al constituirse como sociedad limitada, lo que formalizó aún más su compromiso con la profesionalidad y la seriedad en el sector.
+          Náutica Benítez, S.L. es una empresa familiar que ha dejado una huella
+          sólida y confiable en el sector naval durante más de tres décadas.
+          Fundada en el año 1990 en el prestigioso Club Náutico de Cádiz, esta
+          empresa ha recorrido un camino de éxito y crecimiento constante a lo
+          largo de los años.
         </p>
         <p>
-            Además de nuestra destacada labor en la reparación de motores marinos, hemos diversificado operaciones al incluir una pequeña tienda de venta de accesorios náuticos. Esto ha agregado un componente adicional de conveniencia para sus clientes, que pueden encontrar todo lo que necesitan para sus embarcaciones en un solo lugar.
+          Comenzamos a forjar nuestra reputación con la reparación de motores
+          marinos de embarcaciones de recreo, profesionales y pesqueras. La
+          pasión por la navegación y el compromiso con la excelencia en el
+          servicio al cliente pronto se convirtieron en los pilares
+          fundamentales de esta empresa. En el año 2000, Náutica Benítez dio un
+          paso significativo al trasladarse a su domicilio actual, lo que les
+          permitió ampliar sus operaciones y ofrecer un servicio aún más
+          completo. Un año después, en 2001, la empresa dio un paso crucial al
+          constituirse como sociedad limitada, lo que formalizó aún más su
+          compromiso con la profesionalidad y la seriedad en el sector.
         </p>
-    </section>
-    <section>
-        <div>
-            <h2>POTENCIAMOS SU EXPERIENCIA EN EL MAR</h2>
-            <p>En Náutica Benítez, S.L., nos enorgullece ofrecer un servicio de reparaciones excepcional para motores intraborda que abarca un amplio rango de potencia, desde 3CVv hasta 1800CV. Con más de dos décadas de experiencia en el sector naval y una dedicación inquebrantable hacia la excelencia, hemos establecido un estándar de calidad en la industria náutica que nuestros clientes pueden confiar. Nuestra gama de servicios de reparación de motores intraborda es verdaderamente completa y abarca todas las necesidades que puedas tener para mantener tu embarcación en óptimas condiciones de funcionamiento. Ya sea que poseas una pequeña embarcación de recreo o una embarcación de mayor envergadura, nuestros técnicos altamente calificados están capacitados para abordar una amplia variedad de problemas y tareas de mantenimiento.</p>
-        </div><br>
-        <div>
-            <h2>¿Qué nos diferencia?</h2>
-            <p>Cuando elige Náutica Benítez para sus necesidades de reparación de motores, puede esperar lo siguiente:</p>
-            <ul>
-                <li>
-                    <strong>PROFESIONALIDAD Y EXPERIENCIA</strong>
-                    <p>Nuestro equipo de técnicos cuenta con una vasta experiencia y está continuamente capacitado en las últimas técnicas y tecnologías en la industria naval. Esto garantiza que cada reparación se realice con precisión y destreza.</p>
-                </li>
-                <li>
-                    <strong>DIVERSIDAD DE POTENCIA</strong>
-                    <p>Desde motores de baja potencia de 3CVv hasta motores intraborda de alta potencia de 1800CV, tenemos la experiencia y el conocimiento para abordar motores de todos los tamaños y capacidades.</p>
-                </li>
-                <li>
-                    <strong>DIAGNÓSTICO PRECISO</strong>
-                    <p>Nuestro enfoque comienza con un diagnóstico minucioso y preciso de cualquier problema que pueda estar afectando a tu motor. Esto nos permite abordar la raíz del problema y evitar reparaciones innecesarias.</p>
-                </li>
-            </ul>
-        </div><br><br>
-    </section>
-    <section>
-        <form action="paginaDestino.php" method="POST">
-            <hr>
-            <h3>Tu opinión nos importa</h3>
-            <label for="email"><b>Email:</b></label>
-            <input type="email" id="email" name="email" placeholder="Introduce tu email" required><br><br>
-            <label for="comentarios"><b>Comentarios:</b></label><br>
-            <textarea id="comentarios" name="comentarios" rows="15" cols="30" placeholder="Escribe tus comentarios aquí..." required></textarea><br><br>
-            <label for="privacidad">
-                <input type="checkbox" id="privacidad" name="privacidad" required>
-                He leído y acepto la política de privacidad
-            </label><br><br>
-            <input type="submit" value="Enviar" title="Enviar">
-        </form>
-    </section><br><br>
-    <footer><hr>
-        <label><b>Encuentranos en:</b></label><br><br>
-        <div>
-            <img src="/Nautica-Web/img/Iconos/instagram.png" height="25" width="25">
-            <label>@nautica_benitez_sl</label><br>
-            <img src="/Nautica-Web/img/Iconos/whatsapp.png" height="25" width="25">
-            <label>+34 111000111</label><br>
-            <img src="/Nautica-Web/img/Iconos/facebook.png" height="25" width="25">
-            <label>Nautica Benítez S.L.</label><br>
-            <img src="/Nautica-Web/img/Iconos/telefono.png" height="25" width="25">
-            <label>+34 956220244</label><br>
-            <img src="/Nautica-Web/img/Iconos/correo.png" height="25" width="25">
-            <label>nautica@nauticabenitez.com</label><br><br>
-            <label><b>Dirección:</b></label>
-            <p>Punta de San Felipe, s/n<br>
-                Cádiz<br>
-                Codigo postal: 11004<br>
-                España
+        <p>
+          Además de nuestra destacada labor en la reparación de motores marinos,
+          hemos diversificado operaciones al incluir una pequeña tienda de venta
+          de accesorios náuticos. Esto ha agregado un componente adicional de
+          conveniencia para sus clientes, que pueden encontrar todo lo que
+          necesitan para sus embarcaciones en un solo lugar.
+        </p>
+      </div>
+      <div class="col-1"></div>
+    </div>
+    <div class="row marginTop30 marginBottom20">
+      <div class="col-1"></div>
+      <div class="col-5 borderNautica">
+        <h2>¿Qué nos diferencia?</h2>
+        <p>
+          Cuando elige Náutica Benítez para sus necesidades de reparación de
+          motores, puede esperar lo siguiente:
+        </p>
+        <ul>
+          <li>
+            <strong>PROFESIONALIDAD Y EXPERIENCIA</strong>
+            <p>
+              Nuestro equipo de técnicos cuenta con una vasta experiencia y está
+              continuamente capacitado en las últimas técnicas y tecnologías en
+              la industria naval. Esto garantiza que cada reparación se realice
+              con precisión y destreza.
             </p>
+          </li>
+          <li>
+            <strong>DIVERSIDAD DE POTENCIA</strong>
+            <p>
+              Desde motores de baja potencia de 3CVv hasta motores intraborda de
+              alta potencia de 1800CV, tenemos la experiencia y el conocimiento
+              para abordar motores de todos los tamaños y capacidades.
+            </p>
+          </li>
+          <li>
+            <strong>DIAGNÓSTICO PRECISO</strong>
+            <p>
+              Nuestro enfoque comienza con un diagnóstico minucioso y preciso de
+              cualquier problema que pueda estar afectando a tu motor. Esto nos
+              permite abordar la raíz del problema y evitar reparaciones
+              innecesarias.
+            </p>
+          </li>
+        </ul>
+      </div>
+      <div class="col-1"></div>
+      <div class="col-4">
+        <img
+          src="../img/SobreNosotros/motor1.jpg" height="400px" width="600px"/>
+      </div>
+      <div class="col-1"></div>
+    </div>
+    <div class="fondoBarco">
+      <div class="row">
+        <div class="col-12">
+          <h2 class="cabecero blanco sombra marginTop-5">Tu opinión nos importa</h2>
         </div>
+      </div>
+      <form action="paginaDestino.php" method="POST">
+        <div class="row">
+          <div class="col-5"></div>
+          <div class="col-2">
+            <div class="row marginTop30">
+              <div class="col-1">
+                <label for="email">Email:</label>
+              </div>
+              <div class="col-11"></div>
+            </div>
+            <div class="row">
+              <div class="col-4">
+                <input
+                  type="email"
+                  id="email"
+                  name="email"
+                  placeholder="Introduce tu email"
+                  required
+                />
+              </div>
+              <div class="col-8"></div>
+            </div>
+          </div>
+          <div class="col-5"></div>
+        </div>
+        <div class="row marginTop10">
+          <div class="col-5"></div>
+          <div class="col-2">
+            <div class="row">
+              <div class="col-1">
+                <label for="comentarios">Comentarios:</label>
+              </div>
+              <div class="col-11"></div>
+            </div>
+            <div class="row">
+              <div class="col-12">
+                <textarea
+                  id="comentarios"
+                  name="comentarios"
+                  rows="5"
+                  cols="40"
+                  placeholder="Escribe tus comentarios aquí..."
+                  required
+                ></textarea>
+              </div>
+            </div>
+          </div>
+          <div class="col-5"></div>
+        </div>
+        <div class="row marginTop10">
+          <div class="col-12">
+            <label for="privacidad">
+              <input
+                type="checkbox"
+                id="privacidad"
+                name="privacidad"
+                required
+              />
+              He leído y acepto la política de privacidad
+            </label>
+          </div>
+        </div>
+        <div class="row marginTop30">
+          <div class="col-12 padding10 paddingBottom20">
+            <input type="submit" value="Enviar" title="Enviar"/>
+          </div>
+        </div>
+      </form>
+    </div>
+    <footer>
+      <!-- ROW DE ESPACIADO-->
+      <div class="row">
+        <div class="col-12 marginTop30"></div>
+      </div>
+      <div class="row">
+        <div class="col-3"></div>
+        <div class="col-2">
+          <div class="row">
+            <div class="col-12">
+              <label class="bold">Encuentranos en:</label>
+            </div>
+          </div>
+          <div class="row">
+            <div class="col-12">
+              <div class="row marginBottom10 marginTop10">
+                <img
+                  src="../img/Iconos/instagram.png"
+                  height="25"
+                  width="25"
+                  class="marginRgt5"
+                />
+                <label>@nautica_benitez_sl</label>
+              </div>
+              <div class="row marginBottom10 marginTop10">
+                <img
+                  src="../img/Iconos/whatsapp.png"
+                  height="25"
+                  width="25"
+                  class="marginRgt5"
+                />
+                <label>+34 676407803</label>
+              </div>
+              <div class="row marginBottom10 marginTop10">
+                <img
+                  src="../img/Iconos/facebook.png"
+                  height="25"
+                  width="25"
+                  class="marginRgt5"
+                />
+                <label>Nautica Benítez S.L.</label>
+              </div>
+              <div class="row marginBottom10 marginTop10">
+                <img
+                  src="../img/Iconos/telefono.png"
+                  height="25"
+                  width="25"
+                  class="marginRgt5"
+                />
+                <label>+34 956220244</label>
+              </div>
+              <div class="row marginBottom10 marginTop10">
+                <img
+                  src="../img/Iconos/correo.png"
+                  height="25"
+                  width="25"
+                  class="marginRgt5"
+                />
+                <label>nautica@nauticabenitez.com</label>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="col-2"></div>
+        <div class="col-2">
+          <div class="row">
+            <div class="col-12">
+              <label class="bold"> Dirección</label>
+            </div>
+          </div>
+          <div class="row">
+            <div class="col-12">
+              <div class="row">
+                <div class="col-12 marginTop10">
+                  <label>Punta de San Felipe, s/n</label>
+                </div>
+              </div>
+              <div class="row">
+                <div class="col-12 marginTop10">
+                  <label>Cádiz</label>
+                </div>
+              </div>
+              <div class="row">
+                <div class="col-12 marginTop10">
+                  <label>Codigo postal: 11004</label>
+                </div>
+              </div>
+              <div class="row">
+                <div class="col-12 marginTop10">
+                  <label>España</label>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="col-3"></div>
+      </div>
+      <!--ROW COPYRIGHT-->
+      <div class="row">
+        <div class="col-12 marginTop30">
+          <h3 class="bold">© Todos los derechos reservados.</h3>
+        </div>
+      </div>
+      <div class="row">
+        <div class="col-4"></div>
+        <div class="col-4">
+          <label>Política de privacidad</label>
+          <label> | </label>
+          <label>Aviso legal</label>
+        </div>
+        <div class="col-4"></div>
+      </div>
+      <!-- ROW FINAL-->
+      <div class="row">
+        <div class="col-12 padding10"></div>
+      </div>
     </footer>
-</body>
+  </body>
 </html>
